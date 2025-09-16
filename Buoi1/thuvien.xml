@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>Lập trình Python</title>
+        <author>Nguyễn Văn A</author>
+        <year>2020</year>
+        <genre>Lập trình</genre>
+    </book>
+    <book>
+        <title>Cơ sở dữ liệu</title>
+        <author>Trần Thị B</author>
+        <year>2018</year>
+        <genre>Cơ sở dữ liệu</genre>
+    </book>
+    <book>
+        <title>Trí tuệ nhân tạo</title>
+        <author>Hoàng Minh C</author>
+        <year>2022</year>
+        <genre>AI</genre>
+    </book>
+</library>
