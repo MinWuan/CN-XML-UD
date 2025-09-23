@@ -1,0 +1,5 @@
+<!ELEMENT benhvien (bacsi+)>
+<!ELEMENT bacsi (hoten, ngaysinh?, chuyenkhoa)>
+<!ELEMENT hoten (#PCDATA)>
+<!ELEMENT ngaysinh (#PCDATA)>
+<!ELEMENT chuyenkhoa (#PCDATA)>

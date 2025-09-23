@@ -1,0 +1,7 @@
+<!ELEMENT khoahoc (khoa+)>
+<!ELEMENT khoa (tenkhoa, giangvien, hocvien*)>
+<!ELEMENT tenkhoa (#PCDATA)>
+<!ELEMENT giangvien (hoten, email)>
+<!ELEMENT hoten (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT hocvien (hoten)>

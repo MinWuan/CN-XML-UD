@@ -1,0 +1,6 @@
+<!ELEMENT thuvien (sach+)>
+<!ELEMENT sach (tensach, tacgia, namxb, theloai)>
+<!ELEMENT tensach (#PCDATA)>
+<!ELEMENT tacgia (#PCDATA)>
+<!ELEMENT namxb (#PCDATA)>
+<!ELEMENT theloai (#PCDATA)>

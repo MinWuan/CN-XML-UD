@@ -1,0 +1,7 @@
+<!ELEMENT sinhvien (sv+)>
+<!ELEMENT sv (hoten, masv, monhoc+)>
+<!ELEMENT hoten (#PCDATA)>
+<!ELEMENT masv (#PCDATA)>
+<!ELEMENT monhoc (tenmon, diem)>
+<!ELEMENT tenmon (#PCDATA)>
+<!ELEMENT diem (#PCDATA)>

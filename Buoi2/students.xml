@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "students.dtd">
+<students>
+    <student id="S001">
+        <name>Nguyen Van An</name>
+        <dob>2000-05-15</dob>
+        <major>Computer Science</major>
+    </student>
+    <student id="S002">
+        <name>Tran Thi Bich</name>
+        <dob>2001-03-22</dob>
+        <major>Information Technology</major>
+    </student>
+</students>

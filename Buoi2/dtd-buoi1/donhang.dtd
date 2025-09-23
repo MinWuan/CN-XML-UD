@@ -1,0 +1,3 @@
+<!ELEMENT donhang (sp+)>
+<!ELEMENT sp (tensp)>
+<!ELEMENT tensp (#PCDATA)>
