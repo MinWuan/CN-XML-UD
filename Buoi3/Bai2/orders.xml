@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+  <order id="O1">
+    <product id="P1">
+      <name>Laptop</name>
+      <quantity>2</quantity>
+    </product>
+    <product id="P2">
+      <name>Mouse</name>
+      <quantity>5</quantity>
+    </product>
+  </order>
+  <order id="O2">
+    <product id="P1">
+      <name>Keyboard</name>
+      <quantity>3</quantity>
+    </product>
+    <product id="P2">
+      <name>Monitor</name>
+      <quantity>1</quantity>
+    </product>
+  </order>
+</orders>

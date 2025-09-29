@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book id="B1">
+    <title>The Great Gatsby</title>
+    <author>F. Scott Fitzgerald</author>
+    <year>1925</year>
+    <genre>Fiction</genre>
+  </book>
+  <book id="B2">
+    <title>1984</title>
+    <author>George Orwell</author>
+    <year>1949</year>
+    <genre>Dystopian</genre>
+  </book>
+  <book id="B3">
+    <title>Pride and Prejudice</title>
+    <author>Jane Austen</author>
+    <year>1813</year>
+    <genre>Romance</genre>
+  </book>
+</library>

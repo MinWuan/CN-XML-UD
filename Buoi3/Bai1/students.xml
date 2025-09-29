@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student id="S1">
+    <name>Nguyen Van An</name>
+    <dob>2000-05-15</dob>
+    <major>Computer Science</major>
+  </student>
+  <student id="S2">
+    <name>Tran Thi Bich</name>
+    <dob>2001-03-22</dob>
+    <major>Information Technology</major>
+  </student>
+</students>
