@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSSV>
+  <sinhvien>
+    <mssv>SV00001</mssv>
+    <hoten>Nguyen Van A</hoten>
+    <email>nguyenvana@example.com</email>
+    <sdt>0123456789</sdt>
+    <ma_lop>LOP001</ma_lop>
+  </sinhvien>
+  <sinhvien>
+    <mssv>SV00002</mssv>
+    <hoten>Tran Thi B</hoten>
+    <email>tranthib@example.com</email>
+    <sdt>0987654321</sdt>
+    <ma_lop>LOP002</ma_lop>
+  </sinhvien>
+  <sinhvien>
+    <mssv>SV00003</mssv>
+    <hoten>Le Van C</hoten>
+    <email>levanc@example.com</email>
+    <sdt>0112233445</sdt>
+    <ma_lop>LOP003</ma_lop>
+  </sinhvien>
+  <lop>
+    <ma>LOP001</ma>
+    <ten>Lop CNTT 1</ten>
+    <ma_khoa>KHOA001</ma_khoa>
+  </lop>
+  <lop>
+    <ma>LOP002</ma>
+    <ten>Lop CNTT 2</ten>
+    <ma_khoa>KHOA001</ma_khoa>
+  </lop>
+  <lop>
+    <ma>LOP003</ma>
+    <ten>Lop Kinh te 1</ten>
+    <ma_khoa>KHOA002</ma_khoa>
+  </lop>
+  <khoa>
+    <ma>KHOA001</ma>
+    <ten>Cong Nghe Thong Tin</ten>
+  </khoa>
+  <khoa>
+    <ma>KHOA002</ma>
+    <ten>Kinh Te</ten>
+  </khoa>
+</DSSV>

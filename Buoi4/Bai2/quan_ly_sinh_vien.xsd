@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Char10Type">
+    <xs:restriction base="xs:string">
+      <xs:length value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Varchar50Type">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Varchar150Type">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="150"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SdtType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="0[0-9]{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DSSV">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sinhvien" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mssv" type="Char10Type"/>
+              <xs:element name="hoten" type="Varchar50Type"/>
+              <xs:element name="email" type="Varchar150Type"/>
+              <xs:element name="sdt" type="SdtType"/>
+              <xs:element name="ma_lop" type="Char10Type"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="lop" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma" type="Char10Type"/>
+              <xs:element name="ten" type="Varchar50Type"/>
+              <xs:element name="ma_khoa" type="Char10Type"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="khoa" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ma" type="Char10Type"/>
+              <xs:element name="ten" type="Varchar50Type"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="TenKhoaChinhSinhvien">
+      <xs:selector xpath="sinhvien"/>
+      <xs:field xpath="mssv"/>
+    </xs:key>
+    <xs:key name="TenKhoaChinhLop">
+      <xs:selector xpath="lop"/>
+      <xs:field xpath="ma"/>
+    </xs:key>
+    <xs:key name="TenKhoaChinhKhoa">
+      <xs:selector xpath="khoa"/>
+      <xs:field xpath="ma"/>
+    </xs:key>
+    <xs:keyref name="TenKhoaNgoaiSinhvien" refer="TenKhoaChinhLop">
+      <xs:selector xpath="sinhvien"/>
+      <xs:field xpath="ma_lop"/>
+    </xs:keyref>
+    <xs:keyref name="TenKhoaNgoaiLop" refer="TenKhoaChinhKhoa">
+      <xs:selector xpath="lop"/>
+      <xs:field xpath="ma_khoa"/>
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

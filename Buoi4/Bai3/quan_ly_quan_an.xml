@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUANAN>
+  <nhanvien>
+    <manv>NV00001</manv>
+    <tennv>Nguyen Van A</tennv>
+    <sdt>0123456789</sdt>
+    <gioitinh>Nam</gioitinh>
+    <username>usera123</username>
+    <password>password1234567890</password>
+  </nhanvien>
+  <nhanvien>
+    <manv>NV00002</manv>
+    <tennv>Tran Thi B</tennv>
+    <sdt>0987654321</sdt>
+    <gioitinh>Nu</gioitinh>
+    <username>userb456</username>
+    <password>passwordabcdefghij</password>
+  </nhanvien>
+  <ban>
+    <soban>1</soban>
+    <tenban>Ban 1</tenban>
+  </ban>
+  <ban>
+    <soban>2</soban>
+    <tenban>Ban 2</tenban>
+  </ban>
+  <hoadon>
+    <sohd>1</sohd>
+    <ngaylap>2025-09-30</ngaylap>
+    <tongtien>100.0</tongtien>
+    <manv>NV00001</manv>
+    <soban>1</soban>
+  </hoadon>
+  <hoadon>
+    <sohd>2</sohd>
+    <ngaylap>2025-09-29</ngaylap>
+    <tongtien>80.0</tongtien>
+    <manv>NV00002</manv>
+    <soban>2</soban>
+  </hoadon>
+  <mon>
+    <mamon>MON001</mamon>
+    <tenmon>Pho bo</tenmon>
+    <gia>50.0</gia>
+    <hinhanh>/images/phobo.jpg</hinhanh>
+  </mon>
+  <mon>
+    <mamon>MON002</mamon>
+    <tenmon>Bun cha</tenmon>
+    <gia>40.0</gia>
+    <hinhanh>/images/buncha.jpg</hinhanh>
+  </mon>
+</QUANAN>

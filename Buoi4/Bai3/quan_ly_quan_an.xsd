@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Char10Type">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Varchar50Type">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Char5Type">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="UsernameType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="6"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PasswordType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="10"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SdtType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="0[0-9]{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="QUANAN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nhanvien" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="manv" type="Char10Type"/>
+              <xs:element name="tennv" type="Varchar50Type"/>
+              <xs:element name="sdt" type="SdtType"/>
+              <xs:element name="gioitinh" type="Char5Type"/>
+              <xs:element name="username" type="UsernameType"/>
+              <xs:element name="password" type="PasswordType"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ban" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="soban" type="xs:integer"/>
+              <xs:element name="tenban" type="Char10Type"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="hoadon" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sohd" type="xs:integer"/>
+              <xs:element name="ngaylap" type="xs:date"/>
+              <xs:element name="tongtien" type="xs:float"/>
+              <xs:element name="manv" type="Char10Type"/>
+              <xs:element name="soban" type="xs:integer"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mon" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mamon" type="Char10Type"/>
+              <xs:element name="tenmon" type="Varchar50Type"/>
+              <xs:element name="gia" type="xs:float"/>
+              <xs:element name="hinhanh" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="TenKhoaChinhNhanvien">
+      <xs:selector xpath="nhanvien"/>
+      <xs:field xpath="manv"/>
+    </xs:key>
+    <xs:key name="TenKhoaChinhBan">
+      <xs:selector xpath="ban"/>
+      <xs:field xpath="soban"/>
+    </xs:key>
+    <xs:key name="TenKhoaChinhHoadon">
+      <xs:selector xpath="hoadon"/>
+      <xs:field xpath="sohd"/>
+    </xs:key>
+    <xs:key name="TenKhoaChinhMon">
+      <xs:selector xpath="mon"/>
+      <xs:field xpath="mamon"/>
+    </xs:key>
+    <xs:keyref name="TenKhoaNgoaiHoadonNhanvien" refer="TenKhoaChinhNhanvien">
+      <xs:selector xpath="hoadon"/>
+      <xs:field xpath="manv"/>
+    </xs:keyref>
+    <xs:keyref name="TenKhoaNgoaiHoadonBan" refer="TenKhoaChinhBan">
+      <xs:selector xpath="hoadon"/>
+      <xs:field xpath="soban"/>
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
