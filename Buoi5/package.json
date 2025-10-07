@@ -1,0 +1,16 @@
+{
+  "name": "buoi5",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bai1": "node sv.js",
+    "bai2": "node quanlybanan.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "xmldom": "^0.6.0",
+    "xpath": "^0.0.34"
+  }
+}

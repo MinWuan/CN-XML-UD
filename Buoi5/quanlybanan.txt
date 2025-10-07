@@ -1,0 +1,63 @@
+1. Tất cả bàn:
+- Số bàn: 1, Tên bàn: Bàn 1
+- Số bàn: 2, Tên bàn: Bàn 2
+- Số bàn: 3, Tên bàn: Bàn 3
+
+2. Tất cả nhân viên:
+- Mã NV: NV01, Tên: Nguyễn Văn An
+- Mã NV: NV02, Tên: Trần Thị Bình
+- Mã NV: NV03, Tên: Lê Hoàng Nam
+
+3. Tất cả tên món:
+Cá Kho Tộ
+Canh Chua Cá Lóc
+Gỏi Cuốn
+Bò Lúc Lắc
+
+4. Tên nhân viên có mã NV02: Trần Thị Bình
+
+5. Tên và số điện thoại của nhân viên NV03:
+- Tên: Lê Hoàng Nam, SĐT: 0938765432
+
+6. Tên món có giá > 50,000:
+Bò Lúc Lắc
+
+7. Số bàn của hóa đơn HD03: 3
+
+8. Tên món có mã M02: Canh Chua Cá Lóc
+
+9. Ngày lập của hóa đơn HD03: 2025-10-03
+
+10. Mã món trong hóa đơn HD01:
+M01
+M02
+
+11. Tên món trong hóa đơn HD01:
+Cá Kho Tộ
+Canh Chua Cá Lóc
+
+12. Tên nhân viên lập hóa đơn HD02:
+Trần Thị Bình
+
+13. Số bàn: 3
+
+14. Số hóa đơn lập bởi NV01: 1
+
+15. Tên món trong hóa đơn của bàn số 2:
+Gỏi Cuốn
+Canh Chua Cá Lóc
+
+16. Nhân viên từng lập hóa đơn cho bàn số 3:
+- Lê Hoàng Nam
+
+17. Hóa đơn mà nhân viên nữ lập:
+- Số HD: HD02
+
+18. Nhân viên từng phục vụ bàn số 1:
+- Nguyễn Văn An
+
+19. Món được gọi nhiều hơn 1 lần:
+- Canh Chua Cá Lóc (lần: 2)
+
+20. Tên bàn và ngày lập hóa đơn HD02:
+- Tên bàn: Bàn 2, Ngày lập: 2025-10-02

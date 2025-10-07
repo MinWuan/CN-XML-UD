@@ -1,0 +1,58 @@
+1. Tất cả sinh viên:
+- ID: SV01, Tên: Nguyễn Thị Thanh Thúy, Ngày sinh: 1997-12-20
+- ID: SV02, Tên: Lê Thị Hồng Cầm, Ngày sinh: 1998-01-21
+- ID: SV03, Tên: Lê Thị Hồng Cầm, Ngày sinh: 1997-11-11
+
+2. Tên tất cả sinh viên:
+Nguyễn Thị Thanh Thúy
+Lê Thị Hồng Cầm
+Lê Thị Hồng Cầm
+
+3. ID của tất cả sinh viên:
+SV01
+SV02
+SV03
+
+4. Ngày sinh của SV01: 1997-12-20
+
+5. Các khóa học:
+Toan101
+Vatly203
+Vatly203
+
+6. Toàn bộ thông tin của sinh viên đầu tiên:
+- ID: SV01, Tên: Nguyễn Thị Thanh Thúy, Ngày sinh: 1997-12-20
+
+7. Mã sinh viên đăng ký khóa học Vatly203:
+SV02
+SV03
+
+8. Tên sinh viên học môn Toan101: Lê Thị Hồng Cầm
+
+9. Tên sinh viên học môn Vatly203:
+Lê Thị Hồng Cầm
+
+10. Ngày sinh của SV01: 1997-12-20
+
+11. Tên và ngày sinh của sinh viên sinh năm 1997:
+- Tên: Nguyễn Thị Thanh Thúy, Ngày sinh: 1997-12-20
+- Tên: Lê Thị Hồng Cầm, Ngày sinh: 1997-11-11
+
+12. Tên của các sinh viên có ngày sinh trước năm 1998:
+Nguyễn Thị Thanh Thúy
+Lê Thị Hồng Cầm
+
+13. Tổng số sinh viên: 3
+
+14. Sinh viên chưa đăng ký môn nào:
+
+15. Phần tử <date> anh em ngay sau <name> của SV01: 1997-12-20
+
+16. Phần tử <id> anh em ngay trước <name> của SV02: SV02
+
+17. Node <course> trong enrollment với studentRef='SV03':
+Vatly203
+
+18. Sinh viên có họ là Trần:
+
+19. Năm sinh của SV01: 1997
